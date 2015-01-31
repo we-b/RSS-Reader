@@ -34,7 +34,7 @@
         <!--Navigation Controller-->
         <scene sceneID="qNT-Ik-3nT">
             <objects>
-                <navigationController storyboardIdentifier="NavigationController" id="l0o-dp-M4v" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavigationController" id="l0o-dp-M4v" customClass="NavigationController" customModule="RSS_Reader" customModuleProvider="target" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="OMP-9A-rve">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
