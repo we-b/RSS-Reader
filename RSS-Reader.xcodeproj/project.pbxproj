@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		32E960791A7B443B002E1D4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E960781A7B443B002E1D4C /* AppDelegate.swift */; };
-		32E9607B1A7B443B002E1D4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E9607A1A7B443B002E1D4C /* ViewController.swift */; };
 		32E9607E1A7B443B002E1D4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32E9607C1A7B443B002E1D4C /* Main.storyboard */; };
 		32E960801A7B443B002E1D4C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32E9607F1A7B443B002E1D4C /* Images.xcassets */; };
 		32E960831A7B443B002E1D4C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32E960811A7B443B002E1D4C /* LaunchScreen.xib */; };
@@ -29,7 +28,6 @@
 		32E960731A7B443B002E1D4C /* RSS-Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RSS-Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32E960771A7B443B002E1D4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32E960781A7B443B002E1D4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		32E9607A1A7B443B002E1D4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		32E9607D1A7B443B002E1D4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		32E9607F1A7B443B002E1D4C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		32E960821A7B443B002E1D4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -78,7 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				32E960781A7B443B002E1D4C /* AppDelegate.swift */,
-				32E9607A1A7B443B002E1D4C /* ViewController.swift */,
 				32E9607C1A7B443B002E1D4C /* Main.storyboard */,
 				32E9607F1A7B443B002E1D4C /* Images.xcassets */,
 				32E960811A7B443B002E1D4C /* LaunchScreen.xib */,
@@ -212,7 +209,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32E9607B1A7B443B002E1D4C /* ViewController.swift in Sources */,
 				32E960791A7B443B002E1D4C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +403,7 @@
 				32E960941A7B443B002E1D4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32E960951A7B443B002E1D4C /* Build configuration list for PBXNativeTarget "RSS-ReaderTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +412,7 @@
 				32E960971A7B443B002E1D4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
