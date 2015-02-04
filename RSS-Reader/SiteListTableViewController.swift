@@ -57,6 +57,10 @@ class SiteListTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 60
     }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("PushArticleList", sender: self)
+    }
 
     /*
     // Override to support conditional editing of the table view.

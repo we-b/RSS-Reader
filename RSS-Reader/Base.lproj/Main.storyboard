@@ -26,10 +26,41 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="サイト一覧" id="1Hf-ND-470"/>
+                    <connections>
+                        <segue destination="mG8-st-t0l" kind="show" identifier="PushArticleList" id="Wbm-rp-A35"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BDD-ge-3Oj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="446.5" y="379.5"/>
+            <point key="canvasLocation" x="380.5" y="379.5"/>
+        </scene>
+        <!--記事一覧-->
+        <scene sceneID="G0e-oI-ozc">
+            <objects>
+                <tableViewController id="mG8-st-t0l" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="NOQ-qr-5Wj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="EW1-ip-bq1">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EW1-ip-bq1" id="cAr-2v-kGg">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="mG8-st-t0l" id="LQj-K2-TIo"/>
+                            <outlet property="delegate" destination="mG8-st-t0l" id="oeL-D7-bJm"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="記事一覧" id="LLc-Jf-D3Q"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6gf-pG-43B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="839.5" y="379.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qNT-Ik-3nT">
