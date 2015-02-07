@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="85" id="KGk-i7-Jjw" customClass="ArticleTableViewCell" customModule="RSS_Reader" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dX5-Mi-QbD">
+                        <rect key="frame" x="15" y="10" width="295" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="Xct-7E-q9X"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="Googleにツイートのリアルタイム検索が戻ってくる！">
+                                <attributes>
+                                    <color key="NSColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="12" name="HiraKakuProN-W6"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1N-UM-9vv">
+                        <rect key="frame" x="15" y="25" width="295" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="U94-he-6hT"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment>
+                                <string key="content">Twitterは決算日前夜にGoogleと極めて大きな提携契約を交わしたようだ。Bloombergによると、両社はTwitterのリアルタイムツイートを、「今年の前半」にGoogleの検索結果に含める契約に合意した。
+</string>
+                                <attributes>
+                                    <color key="NSColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="10" name="HiraKakuProN-W3"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="15" maximumLineHeight="15"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="この提携によってGoogleは、Twitterの “fire hose”［消防ホース＝全ツイートデータ］を再びアクセスできるようになる。">
+                                <attributes>
+                                    <color key="NSColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="10" name="HiraKakuProN-W3"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="15" maximumLineHeight="15" lineHeightMultiple="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015/02/05" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yh9-Ch-TJh">
+                        <rect key="frame" x="257" y="65" width="55" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="55" id="aOa-bp-rXy"/>
+                            <constraint firstAttribute="height" constant="15" id="maD-8c-sh2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="7"/>
+                        <color key="textColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dX5-Mi-QbD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="49E-qG-A7m"/>
+                    <constraint firstAttribute="trailing" secondItem="F1N-UM-9vv" secondAttribute="trailing" constant="10" id="7P5-U5-UaU"/>
+                    <constraint firstAttribute="trailing" secondItem="dX5-Mi-QbD" secondAttribute="trailing" constant="10" id="Afw-lJ-Hqu"/>
+                    <constraint firstItem="F1N-UM-9vv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Cox-ND-Que"/>
+                    <constraint firstItem="F1N-UM-9vv" firstAttribute="top" secondItem="dX5-Mi-QbD" secondAttribute="bottom" id="M6H-Yx-KtN"/>
+                    <constraint firstItem="F1N-UM-9vv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Oe9-2p-RJa"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="F1N-UM-9vv" secondAttribute="trailing" id="PBH-ZS-w2v"/>
+                    <constraint firstItem="dX5-Mi-QbD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="VYE-pT-o2V"/>
+                    <constraint firstItem="yh9-Ch-TJh" firstAttribute="top" secondItem="F1N-UM-9vv" secondAttribute="bottom" constant="5" id="XnG-fF-buM"/>
+                    <constraint firstItem="dX5-Mi-QbD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="fVB-mF-w6w"/>
+                    <constraint firstItem="yh9-Ch-TJh" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="hpI-Qg-2BA"/>
+                    <constraint firstItem="yh9-Ch-TJh" firstAttribute="top" secondItem="dX5-Mi-QbD" secondAttribute="bottom" constant="5" id="m7T-wv-Ni6"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="49E-qG-A7m"/>
+                        <exclude reference="Oe9-2p-RJa"/>
+                        <exclude reference="PBH-ZS-w2v"/>
+                        <exclude reference="m7T-wv-Ni6"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="160" y="173.5"/>
+        </tableViewCell>
+    </objects>
+</document>
