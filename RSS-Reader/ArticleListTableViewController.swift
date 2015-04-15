@@ -8,7 +8,11 @@
 
 import UIKit
 
-class ArticleListTableViewController: UITableViewController {
+class ArticleListTableViewController: UITableViewController, NSXMLParserDelegate {
+    var articles:Array<Article> = []
+    
+    var elementName = ""
+    var tmpString = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,11 +23,51 @@ class ArticleListTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         self.tableView.registerNib(UINib(nibName: "ArticleTableViewCell", bundle: nil), forCellReuseIdentifier: "ArticleTableViewCell")
+        loadRSS()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func loadRSS() {
+        articles.removeAll(keepCapacity: false)
+        if let url = NSURL(string: "http://www.wwdjapan.com/index.xml") {
+            let request = NSURLRequest(URL: url)
+            NSURLSession.sharedSession().dataTaskWithRequest(request, completionHandler: { (date, response, error) -> Void in
+                let parser = NSXMLParser(data: date)
+                parser.delegate = self
+                parser.parse()
+            }).resume()
+        }
+    }
+    
+    // MARK: NSXMLParserDelegate
+    
+    func parser(parser: NSXMLParser!, didStartElement elementName: String!, namespaceURI: String!, qualifiedName qName: String!, attributes attributeDict: [NSObject : AnyObject]!) {
+        self.elementName = elementName
+    }
+    
+    func parser(parser: NSXMLParser!, didEndElement elementName: String!, namespaceURI: String!, qualifiedName qName: String!) {
+        if tmpString != "" {
+            let article = Article()
+            article.title = tmpString
+            self.articles.append(article)
+        }
+        self.tmpString = ""
+    }
+    
+    func parserDidEndDocument(parser: NSXMLParser!) {
+        dispatch_async(dispatch_get_main_queue(), {
+            self.tableView.reloadData()
+        })
+    }
+    
+    func parser(parser: NSXMLParser!, foundCharacters string: String!) {
+        if self.elementName == "description" {
+            tmpString += string.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        }
     }
 
     // MARK: - Table view data source
@@ -37,11 +81,14 @@ class ArticleListTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 10
+        return articles.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ArticleTableViewCell", forIndexPath: indexPath) as UITableViewCell
+        let article = self.articles[indexPath.row]
+        let titleLabel = cell.viewWithTag(2) as UILabel
+        titleLabel.text = article.title
         
         return cell
     }
@@ -49,7 +96,7 @@ class ArticleListTableViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 100
+        return 85
     }
 
     /*

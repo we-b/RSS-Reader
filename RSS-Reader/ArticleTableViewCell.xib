@@ -14,49 +14,33 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dX5-Mi-QbD">
+                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Googleにツイートのリアルタイム検索が戻ってくる！" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dX5-Mi-QbD">
                         <rect key="frame" x="15" y="10" width="295" height="15"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="15" id="Xct-7E-q9X"/>
                         </constraints>
-                        <attributedString key="attributedText">
-                            <fragment content="Googleにツイートのリアルタイム検索が戻ってくる！">
-                                <attributes>
-                                    <color key="NSColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
-                                    <font key="NSFont" size="12" name="HiraKakuProN-W6"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                </attributes>
-                            </fragment>
-                        </attributedString>
+                        <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="12"/>
+                        <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1N-UM-9vv">
+                    <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1N-UM-9vv">
                         <rect key="frame" x="15" y="25" width="295" height="35"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="35" id="U94-he-6hT"/>
                         </constraints>
                         <attributedString key="attributedText">
-                            <fragment>
-                                <string key="content">Twitterは決算日前夜にGoogleと極めて大きな提携契約を交わしたようだ。Bloombergによると、両社はTwitterのリアルタイムツイートを、「今年の前半」にGoogleの検索結果に含める契約に合意した。
-</string>
+                            <fragment content="Twitterは決算日前夜にGoogleと極めて大きな提携契約を交わしたようだ。Bloombergによると、両社はTwitterのリアルタイムツイートを、「今年の前半」にGoogleの検索結果に含める契約に合意した。">
                                 <attributes>
                                     <color key="NSColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
                                     <font key="NSFont" size="10" name="HiraKakuProN-W3"/>
                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="15" maximumLineHeight="15"/>
                                 </attributes>
                             </fragment>
-                            <fragment content="この提携によってGoogleは、Twitterの “fire hose”［消防ホース＝全ツイートデータ］を再びアクセスできるようになる。">
-                                <attributes>
-                                    <color key="NSColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
-                                    <font key="NSFont" size="10" name="HiraKakuProN-W3"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="15" maximumLineHeight="15" lineHeightMultiple="1"/>
-                                </attributes>
-                            </fragment>
                         </attributedString>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015/02/05" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yh9-Ch-TJh">
-                        <rect key="frame" x="257" y="65" width="55" height="15"/>
+                        <rect key="frame" x="255" y="65" width="55" height="15"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="55" id="aOa-bp-rXy"/>
                             <constraint firstAttribute="height" constant="15" id="maD-8c-sh2"/>
@@ -77,7 +61,7 @@
                     <constraint firstItem="dX5-Mi-QbD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="VYE-pT-o2V"/>
                     <constraint firstItem="yh9-Ch-TJh" firstAttribute="top" secondItem="F1N-UM-9vv" secondAttribute="bottom" constant="5" id="XnG-fF-buM"/>
                     <constraint firstItem="dX5-Mi-QbD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="fVB-mF-w6w"/>
-                    <constraint firstItem="yh9-Ch-TJh" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="hpI-Qg-2BA"/>
+                    <constraint firstItem="yh9-Ch-TJh" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-2" id="hpI-Qg-2BA"/>
                     <constraint firstItem="yh9-Ch-TJh" firstAttribute="top" secondItem="dX5-Mi-QbD" secondAttribute="bottom" constant="5" id="m7T-wv-Ni6"/>
                 </constraints>
                 <variation key="default">

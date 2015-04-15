@@ -13,6 +13,7 @@
 		323EF44C1A83658500D2054D /* ArticleListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323EF44B1A83658500D2054D /* ArticleListTableViewController.swift */; };
 		323EF44F1A83893900D2054D /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323EF44D1A83893900D2054D /* ArticleTableViewCell.swift */; };
 		323EF4501A83893900D2054D /* ArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 323EF44E1A83893900D2054D /* ArticleTableViewCell.xib */; };
+		32A5B3821ADE4AD6003C5B26 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A5B3811ADE4AD6003C5B26 /* Article.swift */; };
 		32E960791A7B443B002E1D4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E960781A7B443B002E1D4C /* AppDelegate.swift */; };
 		32E9607E1A7B443B002E1D4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32E9607C1A7B443B002E1D4C /* Main.storyboard */; };
 		32E960801A7B443B002E1D4C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32E9607F1A7B443B002E1D4C /* Images.xcassets */; };
@@ -37,6 +38,7 @@
 		323EF44B1A83658500D2054D /* ArticleListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListTableViewController.swift; sourceTree = "<group>"; };
 		323EF44D1A83893900D2054D /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		323EF44E1A83893900D2054D /* ArticleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleTableViewCell.xib; sourceTree = "<group>"; };
+		32A5B3811ADE4AD6003C5B26 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		32E960731A7B443B002E1D4C /* RSS-Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RSS-Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32E960771A7B443B002E1D4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32E960781A7B443B002E1D4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				32E9607F1A7B443B002E1D4C /* Images.xcassets */,
 				32E960811A7B443B002E1D4C /* LaunchScreen.xib */,
 				32E960761A7B443B002E1D4C /* Supporting Files */,
+				32A5B3811ADE4AD6003C5B26 /* Article.swift */,
 			);
 			path = "RSS-Reader";
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			files = (
 				323EF44F1A83893900D2054D /* ArticleTableViewCell.swift in Sources */,
 				32E960791A7B443B002E1D4C /* AppDelegate.swift in Sources */,
+				32A5B3821ADE4AD6003C5B26 /* Article.swift in Sources */,
 				3212DBEE1A7CC5BB002D6F7D /* NavigationController.swift in Sources */,
 				323EF44C1A83658500D2054D /* ArticleListTableViewController.swift in Sources */,
 				3212DBF01A7CFA0C002D6F7D /* SiteListTableViewController.swift in Sources */,
